@@ -78,53 +78,53 @@ ________________________________________
 ### 医療機関ログイン画面
 医療機関スタッフがログインIDとパスワードを入力して、予防接種情報管理画面へアクセスします。
 
-![Clinic Login](images/clinic_login.png)
+![Clinic Login](images/clinic_login2.png)
 ### 対象者検索画面
 医療機関スタッフが、対象者の氏名（フリガナ）とIDを入力して予防接種情報を検索します。
 
-![Clinic Search](images/clinic_search.png)
+![Clinic Search](images/clinic_search2.png)
 ### 予防接種情報一覧画面
 検索した対象者の接種履歴を一覧表示します。  
 ワクチン名・接種日・接種年齢が表形式で確認でき、編集や削除操作も可能です。
 
-![Vaccination List](images/clinic_search_result.png)
+![Vaccination List](images/clinic_search_result2.png)
 ### 接種日編集画面
 対象者の接種履歴を編集する際、カレンダーから日付を選択できます。  
 選択した日付は即時に画面へ反映され、データベースにも更新されます。
 
-![Edit Vaccination Date](images/clinic_search_add.png)
+![Edit Vaccination Date](images/clinic_search_add2.png)
 ### 削除確認ポップアップ
 対象の接種情報を削除する際、確認ダイアログが表示されます。  
 「OK」を押すと該当データが削除され、画面およびデータベースに反映されます。
 
-![Delete Confirmation Popup](images/clinic_search_delete.png)
+![Delete Confirmation Popup](images/clinic_search_delete2.png)
 
 ## 家庭側（child_health_app）
 
 ### 家庭側ログイン画面
 家庭の利用者がログインIDとパスワードを入力して、予防接種情報を閲覧・管理します。
 
-![Child Login](images/child_login.png)
+![Child Login](images/child_login2.png)
 ### 家庭側トップ画面
 ログイン後、子どもの基本情報（氏名・生年月日・年齢）が表示されます。  
 「予防接種」「お知らせ」「成長記録」「健診」などのボタンから各機能へアクセスできます。
 
-![Child Top Page](images/child_mypage.png)
+![Child Top Page](images/child_mypage2.png)
 ### 予防接種情報ページ
 家庭側の利用者が、子どもの接種履歴を一覧で確認できる画面です。  
 ワクチン名・接種日・接種年齢が表形式で表示され、未接種や接種可能な項目も一目で把握できます。
 
-![Child Vaccination List](images/child_allvac.png)
+![Child Vaccination List](images/child_allvac2.png)
 ### 予防接種情報ページ（表示切替機能付き）
 家庭側の利用者は、接種状況に応じて「すべて表示」「接種済み」「接種可能」「未接種」を切り替えて閲覧できます。  
 ワクチン名・接種日・接種年齢が表形式で整理され、進捗状況を簡単に確認できます。
 
-![Vaccination Filter Menu](images/child_showvac.png)
+![Vaccination Filter Menu](images/child_showvac2.png)
 ### 予防接種情報ページ（接種可能フィルター適用）
 「接種可能」を選択すると、現在接種対象となっているワクチンのみが表示されます。  
 家庭側の利用者は、次に受けるべきワクチンを簡単に確認できます。
 
-![Vaccination Filter Result](images/child_avalvac.png)
+![Vaccination Filter Result](images/child_avalvac2.png)
 ________________________________________
 # 使用技術
 ■ バックエンド
