@@ -31,6 +31,8 @@ ________________________________________
 # アプリ構成
 本プロジェクトは、医療機関側と保護者側の
 2つの Flask アプリケーションで構成されています。
+
+```
 vaccination_app/
 ├── child_health_app/
 │   ├── templates/
@@ -49,6 +51,7 @@ vaccination_app/
     ├── vaccination_data.py
     ├── requirements.txt
     └── .env（GitHub には含めない）
+```
 ________________________________________
 # 主な機能
 ■ clinic_app（医療機関側）
