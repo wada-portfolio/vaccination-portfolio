@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>マイページ</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .vac-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        .vac-table th,
+        .vac-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .vac-table th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<h2 class="username">
+    {{ user.name }} さん
+    <span class="furigana">（{{ user.furigana }}）</span>
+</h2>
+
+<p>生年月日：{{ user.birth_date.strftime("%Y年%m月%d日") }}</p>
+<p>年齢：{{ user.age }}</p>
+
+<hr>
+
+<div class="menu-buttons">
+    <button onclick="location.href='{{ url_for('vaccination') }}'">
+        予防接種
+    </button>
+
+    <button disabled>お知らせ</button>
+    <button disabled>成長記録</button>
+    <button disabled>健診</button>
+</div>
+
+</body>
+</html>

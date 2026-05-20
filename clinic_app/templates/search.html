@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>予防接種対象者検索</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .vac-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        .vac-table th,
+        .vac-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .vac-table th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>予防接種対象者検索</h2>
+<form method="post" action="/search" class="search-form">
+
+    <div class="form-group">
+        <label for="name">名前（フリガナ）</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="user_id">対象者ID</label>
+        <input type="password" id="user_id" name="user_id" required>
+    </div>
+
+    <button type="submit">検索</button>
+</form>
+
+{% if error %}
+<p class="error">{{ error }}</p>
+{% endif %}
+
+</body>
+</html>
